@@ -6,13 +6,8 @@ function checkForSpam(message) {
   // Перевіряємо, чи містить рядок слова "spam" або "sale"
   return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
 }
-function checkForSpam(message) {
-  // Переводимо рядок у нижній регістр, щоб перевірка не залежала від регістру
-  const lowerCaseMessage = message.toLowerCase();
 
-  // Перевіряємо, чи містить рядок слова "spam" або "sale"
-  return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
-}
+
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
 console.log(checkForSpam("Get best sale offers now!")); // true
